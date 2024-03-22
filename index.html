@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indus GO</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg" style="background-color: black;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" style="margin: 0; padding: 0;"><img src="image/indusGO-img.png" alt="Logo" style="width: 150px; height: 70px;"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>0
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item me-4">
+                <a class="nav-link active" aria-current="page" style="color: rgb(212, 215, 31);" href="#">Home</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Subscription</a>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item dropdown me-4" id="navbarDropdownMenuLink">
+                <a class="nav-link dropdown-toggle"  href="#"  role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Locations
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="dropdown-products">
+                  <li><a class="dropdown-item" style="color: black !important;" href="#">Kerala</a></li>
+                  <li><a class="dropdown-item" style="color: black !important;" href="#">Trivandrum</a></li>
+                  <li><a class="dropdown-item" style="color: black !important;" href="#">calicut</a></li>
+                  <li><a class="dropdown-item" style="color: black !important;" href="#">Bangalore</a></li>
+                  <li><a class="dropdown-item" style="color: black !important;" href="#">Tamilnadu</a></li>
+                  <li><a class="dropdown-item" style="color: black !important;" href="#">chennai Airport</a></li>
+                  <li><a class="dropdown-item" style="color: black !important;" href="#">kannur</a></li>
+                </ul>
+              </li>
+              <li class="nav-item me-4">
+                <a class="nav-link" href="#">Offer</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Login/Sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container-fluid bg-image" style="background-image: url(image/bg-img-02.jpg); height: 95vh;">
+        <div class="row">
+            <div class="col-lg-6 sm-12 md-12 xl-6 ps-5" style="padding-top: 230px;">
+                <h1 style="color: white;">Rent A Car From Best Car Rental- Indusgo</h1>
+                <p style="color: white;">IndusGo is one of the most trusted car rental services as Indus Motors, the top Maruti dealership in India, promotes it. The rent-a-car service provider offers an outstanding model and a wide variety of vehicle options at the most competitive rates. At IndusGo, we allow you to enjoy flexibility with respect to start and endpoints. You can book cars on an hourly, daily, weekly, monthly basis. Moreover, we provide door-step delivery, believe in complete transparency, and adhere strictly to business ethics.</p>
+            </div>
+            <div class="col-lg-6 sm-12 md-12 xl-6" style="padding-top: 110px; padding-left: 300px; padding-right: 50px;" id="card1">
+                <div class="card text-center">
+                    <div class="card-header" style="background-color: rgb(243, 241, 222);">
+                        <p style="font-size: x-large; margin-bottom: 0; color: rgb(108, 121, 20); padding-bottom: 0;">Find the right car now</p> 
+                      <ul class="nav">
+                        <li class="nav-item car-logo" style="padding-left: 40px;">
+                          <a class="nav-link active" href="#" id="myButton1"><img src="image/car-img.png" alt="car-img" style="width: 80px;"></a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 70px;">
+                          <a class="nav-link" href="#card2" id="myButton2"><img src="image/bike-img.webp" alt="bike-img" style="width: 80px;"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <form action="">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input fa-cog" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Return car to another location</label>
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-location-dot fa-cog" aria-hidden="true" style="font-size: x-large;"></i></span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Choose pick up location">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-location-dot fa-cog" aria-hidden="true" style="font-size: x-large;"></i></span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Choose drop off location">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-calendar fa-cog" aria-hidden="true" style="font-size: large;"></i></span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Choose date & time">
+                        </div>
+                        <div class="d-grid gap-2 mt-1">
+                            <button class="btn btn-warning">Go</button>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="card-body col-6">
+                                <div class=" pt-1">
+                                    <i class="fa fa-home" aria-hidden="true" style="font-size: large; color: red;"></i>
+                                    <p>Doorstep delivery <br>Available in your city</p>    
+                                </div>
+                            </div>
+                            <div class="card-body col-6">
+                                <div class=" pt-1">
+                                    <i class="fa fa-tachometer" aria-hidden="true" style="font-size: large; color: red;"></i>
+                                    <p>Choose your KM Package</p>    
+                                </div>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-6" style="padding-top: 110px; padding-left: 300px; padding-right: 50px; display: none;" id="card2" >
+                <div class="card text-center">
+                    <div class="card-header" style="background-color: rgb(243, 241, 222);">
+                        <p style="font-size: x-large; margin-bottom: 0; color: rgb(108, 121, 20); padding-bottom: 0;">Find the right bike now</p> 
+                      <ul class="nav">
+                        <li class="nav-item" style="padding-left: 40px;">
+                          <a class="nav-link active" href="#card1"><img src="image/car-img.png" alt="car-img" style="width: 80px;"></a>
+                        </li>
+                        <li class="nav-item" style="padding-left: 70px;">
+                          <a class="nav-link" href="#"><img src="image/bike-img.webp" alt="bike-img" style="width: 80px;"></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="card-body">
+                      <form action="">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input fa-cog-1 btn btn-warning" type="checkbox" role="button" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Return car to another location</label>
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-location-dot fa-cog-1" aria-hidden="true" style="font-size: x-large;"></i></span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Choose pick up location">
+                        </div>
+                        <div class="input-group input-group-sm mb-3" id="add_fields_placeholderValue">
+                            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa-solid fa-location-dot fa-cog-1" aria-hidden="true" style="font-size: x-large;"></i></span>
+                            <input type="text" class="form-control" id="add_fields_placeholderValue" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Choose drop off location">
+                        </div>
+                        <div class="input-group input-group-sm mb-3">
+                            <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-calendar fa-cog-1" aria-hidden="true" style="font-size: large;"></i></span>
+                            <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" placeholder="Choose date & time">
+                        </div>
+                        <div class="d-grid gap-2 mt-1">
+                            <button class="btn btn-warning">Go</button>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="card-body col-6">
+                                <div class=" pt-1">
+                                    <i class="fa fa-home" aria-hidden="true" style="font-size: large; color: lightskyblue;"></i>
+                                    <p>Doorstep delivery <br>Available in your city</p>    
+                                </div>
+                            </div>
+                            <div class="card-body col-6">
+                                <div class=" pt-1">
+                                    <i class="fa fa-tachometer" aria-hidden="true" style="font-size: large; color: lightskyblue;"></i>
+                                    <p>Choose your KM Package</p>    
+                                </div>
+                            </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="col-12">
+            <p class="display-6 text-center pt-3" style="font-size: x-large;"><b>Know more about our subscriptions</b></p>
+        </div>
+        <div class="col-12 text-center pt-3">Discover the convenience and benefits of car subscription with IndusGo. Our customer-friendly system ensures a seamless experience for your <br>favorite pick. Enjoy zero down payment, free insurance, and complimentary maintenance and service. With the freedom to return or extend your <br>subscription anytime, IndusGo guarantees your happiness on the road. Choose IndusGo and experience the joy of hassle-free car subscription <br>today.</div>
+      </div>
+
+      <div class="container-fluid mt-5 pt-5 container_img">
+        <div class="row">
+            <div class="card border-warning mb-3 ms-3" style="max-width: 13rem;">
+                <div class="card-hover-text" style="padding-bottom: 118px;">
+                    <ul>
+                        <li>Access to a Vehicle Without Financial Strain.</li>
+                        <li>no need to pay hefty road tax.</li>
+                        <li>Cheaper than EMI</li>
+                    </ul>
+                </div>
+                <div class="card-body text-warning text-dark No_down_pay card-text" style="font-size: xx-large; ">
+                    <i class="fa-solid fa-credit-card border border-warning p-3 "></i>
+                    <p style="font-size: medium; padding-bottom: 80px;" class="text-start"><span style="padding-left: 30px;">No</span> <br>Downpayment</p>
+                </div>
+            </div>
+            <div class="card border-warning mb-3 ms-3" style="max-width: 13rem;">
+                <div class="card-hover-text" style="padding-bottom: 118px;">
+                    <ul>
+                        <li>No additional financial burden of paying for insurance</li>
+                        <li>Comprehensive Coverage</li>
+                    </ul>
+                </div>
+                <div class="card-body text-warning text-dark No_down_pay card-text" style="font-size: xx-large; ">
+                    <i class="fa-solid fa-car-burst border border-warning p-3 "></i>
+                    <p style="font-size: medium; padding-bottom: 80px;" class="text-start"><span style="padding-left: 20px;">Free</span> <br>Insurance</p>
+                </div>
+            </div>
+            <div class="card border-warning mb-3 ms-3" style="max-width: 13rem;">
+                <div class="card-hover-text" style="padding-bottom: 118px;">
+                    <ul>
+                        <li>Cost Savings</li>
+                        <li>24*7 roadside assistance</li>
+                    </ul>
+                </div>
+                <div class="card-body text-warning text-dark No_down_pay card-text" style="font-size: xx-large; ">
+                    <i class="fa-solid fa-gears border border-warning p-3"></i>
+                    <p style="font-size: medium; padding-bottom: 80px;" class="text-start"><span style="padding-left: 20px;">Free</span> <br>Servicing</p>
+                </div>
+            </div>
+            <div class="card border-warning mb-3 mx-3" style="max-width: 13rem;">
+                <div class="card-hover-text" style="padding-bottom: 118px;">
+                    <ul>
+                        <li>Transparent Pricing</li>
+                        <li>Clearly Defined Terms and Conditions</li>
+                    </ul>
+                </div>
+                <div class="card-body text-warning text-dark No_down_pay card-text" style="font-size: xx-large; ">
+                    <i class="fa-solid fa-coins border border-warning p-3"></i>
+                    <p style="font-size: medium; padding-bottom: 80px;" class="text-start"><span style="padding-left: 20px;">Zero</span> <br>Hidden Charges</p>
+                </div>
+            </div>
+            <div class="card border-warning mb-3 ms-0" style="max-width: 13rem;">
+                <div class="card-hover-text" style="padding-bottom: 118px;">
+                    <ul>
+                        <li>Option to Switch Cars</li>
+                        <li>return or extent anytime</li>
+                    </ul>
+                </div>
+                <div class="card-body text-warning text-dark No_down_pay card-text" style="font-size: xx-large; ">
+                    <i class="fa-solid fa-road border border-warning p-3"></i>
+                    <p style="font-size: medium; padding-bottom: 80px; padding-left: 20px;" class="text-start"><span style="padding-left: 10px;">No</span> <br>Limits</p>
+                </div>
+            </div>
+            <div class="card border-warning mb-4 ms-3" style="max-width: 20rem;">
+                <a href="#"><img src="image/car-img-2.png" alt="car-img" style="margin: -15px; padding-top: 14px;"></a>
+            </div>
+        </div>
+      </div>
+
+      <div class="container-fliud mt-4" style="background-color: rgb(210, 221, 45);">
+        <p class="display-6 text-center pt-3" style="font-size: xx-large;">Featured In</p>
+        <section class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                     <a href="#"><img src="image/slide-img-1.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                        <a href="#"><img src="image/slide-img-2.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                        <a href="#"><img src="image/slide-img-3.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                        <a href="#"><img src="image/slide-img-4.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                        <a href="#"><img src="image/slide-img-5.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                        <a href="#"><img src="image/slide-img-6.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                        <a href="#"><img src="image/slide-img-7.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                        <a href="#"><img src="image/slide-img-8.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                        <a href="#"><img src="image/slide-img-9.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+                <div class="card ms-4 mb-3 card-slider swiper-slide" style="width: 30rem;">
+                    <div class="card-img">
+                     <a href="#"><img src="image/slide-img-10.jpg" alt="" style="width: 100px;"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+
+      <div class="container-fluid" >
+        <p class="display-6 text-center mt-5" style="font-size: xx-large;">Read What Our Customers Have to Say!</p>
+        <section class="home1" style="align-items: center; margin-left:38%; margin-bottom: 20px;">
+            <div class="slider1">
+                <div class="card border-warning m-3 slide active" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px; "></i>
+                      <p class="card-text-2">Rented out brezza diesel. Car was in excellent condition and clean as well. Very nominal pricing and this is the only rental place around calicut which provides rental cars for day basis. They have an awesome!</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">1 year ago</span> <br>
+                      <img src="image/t-img.png" alt="" style="width: 30px;"><span style="font-size: large;"> Tamizhazhagan M</span>
+                    </div>
+                </div>
+                <div class="card border-warning m-3 slide" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px;"></i>
+                      <p class="card-text-2">I'm one of the happy customer. I have rented Maruti Ignis through IndusGo. Delivery to pickup everything was satisfactory. Car was  in good condition, they made refund well within time.</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">1 year ago</span> <br>
+                      <img src="image/t-img.png" alt="" style="width: 30px;"><span style="font-size: large;"> Tushar chandarana</span>
+                    </div>
+                </div>
+                <div class="card border-warning m-3 slide" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px;"></i>
+                      <p class="card-text-2">Very good and prompt service. Punctual home delivery and pick up.  Clean cars. Polite and friendly staff. I am a happy customer and would always go to IndusGo first for car rentals.</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">10 months ago</span> <br>
+                      <img src="image/a-img.jpg" alt="" style="width: 30px;"><span style="font-size: large;"> Anil Mathews</span>
+                    </div>
+                </div>
+                <div class="card border-warning m-3 slide" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px;"></i>
+                      <p class="card-text-2">Had very good experience with IndusGo. Staff are excellent, especially Salman at Hyderabad pick up yard ,is very professional and Good Luck IndusGo 👍</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">1 year ago</span> <br>
+                      <img src="image/s-img.png" alt="" style="width: 30px;"><span style="font-size: large;"> Sudeeshy</span>
+                    </div>
+                </div>
+                <div class="card border-warning m-3 slide" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px;"></i>
+                      <p class="card-text-2">One of the best Rent a car services in Chennai and many thanks for the quicker customer care support... Keep Going the same way</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">1 year ago</span> <br>
+                      <img src="image/s-img.png" alt="" style="width: 30px;"><span style="font-size: large;"> Shahin faisal</span>
+                    </div>
+                </div>
+                <div class="card border-warning m-3 slide" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px;"></i>
+                      <p class="card-text-2">Nice place to rent a car in Trivandrum. Staffs are friendly. I took a car one day rental and enjoyed my trip.The customer services was done by Bibin and they explained.</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">1 year ago</span> <br>
+                      <img src="image/a-img.jpg" alt="" style="width: 30px;"><span style="font-size: large;"> Abhijith S</span>
+                    </div>
+                </div>
+                <div class="card border-warning m-3 slide" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px;"></i>
+                      <p class="card-text-2">Delightful experience. The customer care person was very helpful to begin my journey with IndusGO. The yard at Thiruvananthapuram is peaceful, the paperwork is quick!</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">1 year ago</span> <br>
+                      <img src="image/s-img.png" alt="" style="width: 30px;"><span style="font-size: large;"> Shreyas Shabaraya</span>
+                    </div>
+                </div>
+                <div class="card border-warning m-3 slide" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px;"></i>
+                      <p class="card-text-2">Good car rental service in and around Kozhikode. I took Ignis, car was in very good condition. Pickup and drop process is hassle free. All in all, I recommend the company.</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">1 year ago</span> <br>
+                      <img src="image/h-img.webp" alt="" style="width: 30px;"><span style="font-size: large;"> Hemanath Nagabooshanam</span>
+                    </div>
+                </div>
+                <div class="card border-warning m-3 slide" style="max-width: 20rem;">
+                    <div class="card-body">
+                      <i class="fa-solid fa-quote-left" style="font-size: 60px; color: gray; margin-left: 100px;"></i>
+                      <p class="card-text-2">I rented swift automatic for 7 days. They gave me a clean car and it was almost brand new. I was tired of taking dirty Uber/ola cab and if you can drive, this is the best.</p>
+                      <img src="image/star-img.jpg" alt="" style="width: 100px;"><span style="font-size: small;">1 year ago</span> <br>
+                      <img src="image/s-img.png" alt="" style="width: 30px;"><span style="font-size: large;"> Sasi Gandhamaneni</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </div>
+
+      <!-- <div class="container-fluid mt-5 pt-5">
+        <div class="row">
+            <div class="col-3">
+                <img src="image/question-img.jpg" alt="">
+                <p class="ps-5">Frequently asked 
+                    questions</p>
+            </div>
+            <div class="col d-grid gap-2">
+            </div>
+        </div>
+      </div> -->
+
+      <div class="container-fluid bg-image" style="background-image: url(image/car-bg-img.jpg); ">
+        <div class="row">
+            <div class="col-8 mt-5 pt-5">
+                <p class="display-6">Download IndusGo Mobile App on your phone!</p>
+                <a href="#" class="px-5"><img src="image/google-play-img.png" alt="" style="width: 200px;"></a>
+                <a href="#"><img src="image/app-store-img.png" alt="" style="width: 200px;"></a>
+            </div>
+            <div class="col-4" style="padding-left: 200px;">
+                <img src="image/phone-img.png" alt="">
+            </div>
+        </div>
+      </div>
+
+      <div class="container-fluid mt-3 pt-3" style="background-color: black;">
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white;  padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Kerala</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white;  padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Tamilnadu</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Hyderabad</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Hyderabad International Airport</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Cochin</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Cochin International Airport</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Calicut</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Calicut International Airport</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Trivandrum</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Trivandrum International Airport</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Chennai</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;">Chennai Airport</span></span>
+        <i class="fa-solid fa-car" style="color: gold; font-size: x-large;"></i>
+        <span style="color: white; padding-left: 10px; padding-right: 10px;">Self drive cars in <span style="color: goldenrod;"> Bangalore</span></span>
+        <hr style="color: gray;">
+        <div class="row">
+            <div class="col-3">
+                <h5 style="color: white;">Helpful links</h5>
+                <ul class="helpful-link">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+            <div class="col-4">
+                <h5 style="color: white;">Get in touch</h5>
+                <i class="fa-solid fa-location-dot" style="color: gold; font-size: x-large;"></i><span class="ps-2 pb-3" style="color: white;">3, 1047/2, Indus Motor Company Pvt LTD M.G. Road, Thevara, Ernakulam, Kerala, 682015</span> <br>
+                <a href="#" style="text-decoration: none;"><i class="fa-regular fa-envelope pt-3" style="color: gold; font-size: x-large;"></i><span class="ps-2" style="color: white;">support@indusgo.in</span></a> <br>
+                <a href="#" style="text-decoration: none;"><i class="fa-solid fa-phone pt-3" style="color: gold; font-size: x-large;"></i><span class="ps-2" style="color: white;">+91 9539580000</span></a>
+            </div>
+            <div class="col-2">
+                <h5 style="color: white;">Follow us on</h5>
+                <a href="#"><i class="fa-brands fa-facebook pe-3" style="color: gold; font-size: x-large;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter pe-3" style="color: gold; font-size: x-large;"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram" style="color: gold; font-size: x-large;"></i></a>
+                
+            </div>
+            <div class="col-2">
+                <h5 style="color: white; padding-bottom: 20px;">Download App</h5>
+                <a href="#"><img src="image/google-play-img.png" alt="" style="width: 100px;" class="broder bg-light"></a>
+                <a href="#"><img src="image/app-store-img.png" alt="" style="width: 100px;" class="broder bg-light"></a>
+            </div>
+        </div>
+      </div>
+      <div class="container-fluid" style="background-color: rgb(59, 59, 59);">
+        <div class="col-12">
+            <p style="color: white;" class="py-3 text-center">© 2024 Indus Go. All rights reserved.</p>
+        </div>
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 6,
+      centeredSlides: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+
+  
+    <script src="index.js"></script>
+</body>
+</htm
